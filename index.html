@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal-portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Photo/logo(1).png" class="Logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contect</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web-Developer</p>
+          <h1>Hi, I'm <span>Mohit</span> <br />Vishwakarma From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------ABOUT------/ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Photo/mohit(4).png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi! I’m a web developer and I love all things tech. When I’m not
+              knee-deep in code, I’m probably reading up on the latest
+              development trends or practicing my sketching (or both). I got my
+              start in technology as a self-taught coder, and since then I’ve
+              never looked back. I specialize in front-end development, but I
+              have a little bit of experience with everything from coding to QA
+              to project management. I’m always looking for new challenges and
+              opportunities, and I’m excited to see what the future holds for me
+              in the world of tech. Thanks for reading!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-skills active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-skills" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-skills" onclick="opentab('education')">Education</p>
+            </div>
+            <br />
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Developer</span><br />Web App Development</li>
+                <li><span>UI/UX</span><br />Design Web/App interfase</li>
+                <li>
+                  <span>App Developement</span><br />Building Android/Os App
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>-Current</span><br />Fraser Still Learning DSA(c++)
+                </li>
+                <li>
+                  <span>2026</span><br />Comlite Full Stack Web-development by
+                  Apna College
+                </li>
+                <li><span>2025 - 2026 </span><br />learn C/C++</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2025</span><br />Web-devement by sradha mam</li>
+                <li>
+                  <span>2026</span><br />Comlite Full Stack Web-development by
+                  Apna College
+                </li>
+                <li><span>2024 - 2028 </span><br />Btech from MIST Indore</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------servises---------- -->
+
+    <div id="services">
+      <div id="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web development</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, explicabo ex. Ad, totam porro asperiores repudiandae
+              excepturi odio nobis tempora illum facilis sed, atque aperiam odit
+              nisi neque architecto eum.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX interfase</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, explicabo ex. Ad, totam porro asperiores repudiandae
+              excepturi odio nobis tempora illum facilis sed, atque aperiam odit
+              nisi neque architecto eum.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Developments</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, explicabo ex. Ad, totam porro asperiores repudiandae
+              excepturi odio nobis tempora illum facilis sed, atque aperiam odit
+              nisi neque architecto eum.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------Portfoio------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Photo/img 1.avif" />
+            <div class="layer">
+              <h3>Coding</h3>
+              <p>
+                Coding is the process of creating instructions for computers to
+                perform specific tasks, using programming languages like Python,
+                JavaScript, or C++ to build software, apps, and websites
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Photo/img2.avif" />
+            <div class="layer">
+              <h3>Laptop</h3>
+              <p>
+                A laptop is a portable, all-in-one personal computer designed
+                for mobile use,
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Photo/img3.avif" />
+            <div class="layer">
+              <h3>Frontend</h3>
+              <p>
+                Frontend development is the creation of the graphical user
+                interface (GUI) of a website or application, focusing on
+                everything users see and interact with, such as layout, design,
+                and buttons
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <!-- -----------contact------------ -->
+     <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>mohitvishwakarma626810@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>6268104547</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/____mohit._/"><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/mohitvishwakarma626810-cyber"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+            <a href="file:///C:/Users/mohit/Downloads/resume%20(3).pdf"  class="btn btn2">Dwonload Resume</a>
+          </div>
+          <div class="contact-right">
+             <form>
+              <input type="text" name="Name" placeholder="Your name">
+              <input type="email" name="Email" placeholder="Your email">
+              <textarea name="Message" role="6" placeholder="Your msg"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+             </form>
+          </div>
+        </div>
+      </div>
+     </div>
+    <script>
+      let tabskills = document.getElementsByClassName("tab-skills");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tabskill of tabskills) {
+          tabskill.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+    
+
+  </body>
+</html>
